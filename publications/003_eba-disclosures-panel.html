@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>European Bank Regulatory Data: The EBA Disclosures Panel — Eric Cuijpers</title>
+  <meta name="description" content="Analysis-ready panel of European bank regulatory disclosures compiled from EBA Transparency Exercises (2012–2025). Capital ratios, balance sheets, RWA, and credit risk exposures for large EU and EEA banks.">
+  <meta name="author" content="Eric Cuijpers">
+  <link rel="canonical" href="https://ericcuijpers.com/publications/003_eba-disclosures-panel.html">
+  <meta property="og:title" content="European Bank Regulatory Data: The EBA Disclosures Panel (2012–2025)">
+  <meta property="og:description" content="Analysis-ready panel of European bank regulatory disclosures. Quarterly data on capital ratios, balance sheets, RWA, and credit risk exposures for large EU and EEA banks.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ericcuijpers.com/publications/003_eba-disclosures-panel.html">
+  <meta property="og:image" content="https://ericcuijpers.com/images/eric_cuijpers_v4.jpg">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <div class="outer-container">
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../research.html">Research</a>
+      <a href="../cv.html">CV</a>
+      <a href="../about.html">About</a>
+    </nav>
+  </div>
+
+  <main class="outer-container">
+    <div class="content">
+
+      <p class="paper-back"><a href="../research.html">← Research</a></p>
+
+      <h1 class="paper-title">European Bank Regulatory Data: The EBA Disclosures Panel (2012–2025)</h1>
+      <p class="paper-meta">Eric Cuijpers, Maurice Bun · Zenodo · 2025</p>
+
+      <div class="paper-links">
+        <a href="https://zenodo.org/records/19109425">Zenodo</a>
+      </div>
+
+      <hr>
+
+      <h2>Overview</h2>
+      <p>An analysis-ready panel of European bank regulatory disclosures compiled from all EBA Transparency Exercise releases since 2014, extended back to 2013 using the EBA stress test dataset. Coverage spans large banks in EU Member States and EEA countries, with semi-annual observations in early vintages and quarterly observations from 2018 onward.</p>
+
+      <hr>
+
+      <h2>Contents</h2>
+      <ul class="highlights">
+        <li>Capital and leverage ratios</li>
+        <li>Balance sheet and P&L items</li>
+        <li>Risk-weighted asset (RWA) components</li>
+        <li>Detailed credit risk exposure breakdowns by portfolio and geography</li>
+      </ul>
+
+      <hr>
+
+      <h2>Format</h2>
+      <p>Provided in long format as CSV and Parquet files with a data dictionary.</p>
+
+    </div>
+  </main>
+
+  <div class="outer-container">
+    <footer>
+      <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;e.cuijpers&#64;dnb&#46;nl">e.cuijpers&#64;dnb&#46;nl</a>
+      <span>·</span>
+      <a href="https://scholar.google.com/citations?user=IjH0WNsAAAAJ&hl=en">Google Scholar</a>
+      <span>·</span>
+      <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=4034955">SSRN</a>
+      <span>·</span>
+      <a href="https://www.linkedin.com/in/eric-cuijpers-68652515/">LinkedIn</a>
+    </footer>
+  </div>
+
+  <div class="privacy-bar" id="privacy-bar">
+    <p>I care about your privacy. No cookies, no tracking, no third-party requests.</p>
+    <button id="privacy-dismiss">Got it</button>
+  </div>
+  <script>
+    (function() {
+      var bar = document.getElementById('privacy-bar');
+      if (localStorage.getItem('privacy-noted')) { bar.classList.add('hidden'); return; }
+      document.getElementById('privacy-dismiss').addEventListener('click', function() {
+        bar.classList.add('hidden');
+        localStorage.setItem('privacy-noted', '1');
+      });
+    })();
+  </script>
+
+</body>
+</html>

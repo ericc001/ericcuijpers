@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home — Eric Cuijpers</title>
+  <meta name="description" content="Eric Cuijpers — Economist at De Nederlandsche Bank. Research on how regulatory frameworks shape bank behaviour and the transmission of sovereign risk.">
+  <meta name="author" content="Eric Cuijpers">
+  <link rel="canonical" href="https://ericcuijpers.com/">
+  <meta property="og:title" content="Eric Cuijpers">
+  <meta property="og:description" content="Economist at De Nederlandsche Bank. Research on how regulatory frameworks shape bank behaviour and the transmission of sovereign risk.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ericcuijpers.com/">
+  <meta property="og:image" content="https://ericcuijpers.com/images/eric_cuijpers_v4.jpg">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="outer-container">
+    <nav>
+      <a href="index.html" class="nav-active">Home</a>
+      <a href="research.html">Research</a>
+      <a href="cv.html">CV</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+
+  <main class="outer-container">
+    <div class="content">
+
+      <div class="intro-block">
+        <div class="intro-text">
+          <h1>Eric Cuijpers</h1>
+          <p class="affiliation">Economist · De Nederlandsche Bank</p>
+          <p class="tagline">I study how regulatory frameworks shape bank behaviour by combining econometric methods with granular knowledge of European bank regulation and policy. </p>
+        </div>
+        <div class="intro-photo">
+          <img src="images/eric_cuijpers_v4.jpg" alt="Eric Cuijpers">
+        </div>
+      </div>
+
+      <hr>
+
+      <h2>Recent Research</h2>
+      <ul class="item-list">
+        <li>
+          <span class="item-title"><a href="publications/001_sovereign-risk-transmission.html">The Regulatory Precondition to Sovereign Risk Transmission</a></span>
+          <span class="item-meta">DNB Working Paper · 2025</span>
+          <span class="item-description">Banks with favourable regulatory treatment amplify sovereign risk transmission. Reforming the rules on sovereign debt risk weights could break the link.</span>
+        </li>
+        <li>
+          <span class="item-title"><a href="publications/002_cross-border-banking.html">Cross-Border Banking, Intragroup Exposures, and Risk-Taking</a></span>
+          <span class="item-meta">With R. Vlahu · DNB Working Paper · 2026</span>
+          <span class="item-description">Relaxing intragroup exposure limits—as planned in Europe for 2028—can amplify risk-taking within multinational banking groups by enabling parent banks to draw on affiliate resources.</span>
+        </li>
+      </ul>
+
+      <h2>Data</h2>
+      <ul class="item-list">
+        <li>
+          <span class="item-title"><a href="publications/003_eba-disclosures-panel.html">European Bank Regulatory Data: The EBA Disclosures Panel (2012–2025)</a></span>
+          <span class="item-meta">With M. Bun · Zenodo · 2025</span>
+          <span class="item-description">Analysis-ready panel of European bank regulatory disclosures. Quarterly data on capital ratios, balance sheets, RWA, and credit risk exposures for large EU and EEA banks.</span>
+        </li>
+      </ul>
+
+      <p><a href="research.html">All research →</a></p>
+
+
+    </div>
+  </main>
+
+  <div class="outer-container">
+    <footer>
+      <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;e.cuijpers&#64;dnb&#46;nl">e.cuijpers&#64;dnb&#46;nl</a>
+      <span>·</span>
+      <a href="https://scholar.google.com/citations?user=IjH0WNsAAAAJ&hl=en">Google Scholar</a>
+      <span>·</span>
+      <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=4034955">SSRN</a>
+      <span>·</span>
+      <a href="https://www.linkedin.com/in/eric-cuijpers-68652515/">LinkedIn</a>
+    </footer>
+  </div>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Eric Cuijpers",
+    "jobTitle": "Economist",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "De Nederlandsche Bank",
+      "url": "https://www.dnb.nl"
+    },
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Amsterdam"
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Warwick"
+      }
+    ],
+    "knowsAbout": ["Empirical Banking", "Bank Regulation", "Financial Stability", "Sovereign Risk", "Econometrics"],
+    "url": "https://ericcuijpers.com",
+    "image": "https://ericcuijpers.com/images/eric_cuijpers_v4.jpg",
+    "sameAs": [
+      "https://www.linkedin.com/in/eric-cuijpers-68652515/",
+      "https://scholar.google.com/citations?user=IjH0WNsAAAAJ&hl=en",
+      "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=4034955"
+    ]
+  }
+  </script>
+
+  <div class="privacy-bar" id="privacy-bar">
+    <p>I care about your privacy. No cookies, no tracking, no third-party requests.</p>
+    <button id="privacy-dismiss">Got it</button>
+  </div>
+  <script>
+    (function() {
+      var bar = document.getElementById('privacy-bar');
+      if (localStorage.getItem('privacy-noted')) { bar.classList.add('hidden'); return; }
+      document.getElementById('privacy-dismiss').addEventListener('click', function() {
+        bar.classList.add('hidden');
+        localStorage.setItem('privacy-noted', '1');
+      });
+    })();
+  </script>
+
+</body>
+</html>

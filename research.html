@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research — Eric Cuijpers</title>
+  <meta name="description" content="Research by Eric Cuijpers on how regulatory frameworks shape bank behaviour and the transmission of sovereign risk. Working papers and datasets.">
+  <meta name="author" content="Eric Cuijpers">
+  <link rel="canonical" href="https://ericcuijpers.com/research.html">
+  <meta property="og:title" content="Research — Eric Cuijpers">
+  <meta property="og:description" content="How regulatory frameworks shape bank behaviour and the transmission of sovereign risk. Working papers and datasets.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ericcuijpers.com/research.html">
+  <meta property="og:image" content="https://ericcuijpers.com/images/eric_cuijpers_v4.jpg">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="outer-container">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="research.html" class="nav-active">Research</a>
+      <a href="cv.html">CV</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+
+  <main class="outer-container">
+    <div class="content">
+
+      <h1>Research</h1>
+      <p>I study how regulatory frameworks shape bank behaviour and the transmission of sovereign risk, combining econometric methods with granular knowledge of European bank regulation.</p>
+
+      <h2>Working Papers</h2>
+      <ul class="item-list">
+        <li>
+          <span class="item-title"><a href="publications/001_sovereign-risk-transmission.html">The Regulatory Precondition to Sovereign Risk Transmission</a></span>
+          <span class="item-meta">DNB Working Paper No. 834 · 2025</span>
+          <span class="item-description">Banks that receive a zero percent risk weight on sovereign exposures increase home sovereign bond holdings and reduce lending when sovereign risk rises. Comparable banks facing stricter requirements do not. Reforming the regulatory treatment of sovereign debt could break this transmission channel.</span>
+          <a href="publications/001_sovereign-risk-transmission.html" class="item-action">Read more & highlights →</a>
+        </li>
+        <li>
+          <span class="item-title"><a href="publications/002_cross-border-banking.html">Cross-Border Banking, Intragroup Exposures, and Risk-Taking</a></span>
+          <span class="item-meta">With Razvan Vlahu · DNB Working Paper No. 854 · 2026</span>
+          <span class="item-description">Relaxing intragroup exposure limits — as planned in Europe for 2028 — can amplify risk-taking within multinational banking groups by enabling parent banks to draw on affiliate resources. The effect is strongest when foreign affiliates are large, well capitalised, and face weaker liquidity requirements.</span>
+          <a href="publications/002_cross-border-banking.html" class="item-action">Read more & highlights →</a>
+        </li>
+      </ul>
+
+      <hr>
+
+      <h2>Datasets</h2>
+      <ul class="item-list">
+        <li>
+          <span class="item-title"><a href="publications/003_eba-disclosures-panel.html">European Bank Regulatory Data: The EBA Disclosures Panel (2012–2025)</a></span>
+          <span class="item-meta">With Maurice Bun · Zenodo · 2025</span>
+          <span class="item-description">Analysis-ready panel of European bank regulatory disclosures compiled from all EBA Transparency Exercise releases. Quarterly data on capital ratios, balance sheets, RWA, and credit risk exposures for large EU and EEA banks.</span>
+          <a href="publications/003_eba-disclosures-panel.html" class="item-action">Details & download →</a>
+        </li>
+      </ul>
+
+    </div>
+  </main>
+
+  <div class="outer-container">
+    <footer>
+      <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;e.cuijpers&#64;dnb&#46;nl">e.cuijpers&#64;dnb&#46;nl</a>
+      <span>·</span>
+      <a href="https://scholar.google.com/citations?user=IjH0WNsAAAAJ&hl=en">Google Scholar</a>
+      <span>·</span>
+      <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=4034955">SSRN</a>
+      <span>·</span>
+      <a href="https://www.linkedin.com/in/eric-cuijpers-68652515/">LinkedIn</a>
+    </footer>
+  </div>
+
+  <div class="privacy-bar" id="privacy-bar">
+    <p>I care about your privacy. No cookies, no tracking, no third-party requests.</p>
+    <button id="privacy-dismiss">Got it</button>
+  </div>
+  <script>
+    (function() {
+      var bar = document.getElementById('privacy-bar');
+      if (localStorage.getItem('privacy-noted')) { bar.classList.add('hidden'); return; }
+      document.getElementById('privacy-dismiss').addEventListener('click', function() {
+        bar.classList.add('hidden');
+        localStorage.setItem('privacy-noted', '1');
+      });
+    })();
+  </script>
+
+</body>
+</html>

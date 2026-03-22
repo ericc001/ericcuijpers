@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Eric Cuijpers</title>
+  <meta name="description" content="About Eric Cuijpers. Economist at De Nederlandsche Bank researching how regulatory frameworks shape bank behaviour and the transmission of sovereign risk.">
+  <meta name="author" content="Eric Cuijpers">
+  <link rel="canonical" href="https://ericcuijpers.com/about.html">
+  <meta property="og:title" content="About — Eric Cuijpers">
+  <meta property="og:description" content="Economist at De Nederlandsche Bank. Research on bank regulation and sovereign risk. Background in political science and financial economics.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ericcuijpers.com/about.html">
+  <meta property="og:image" content="https://ericcuijpers.com/images/eric_cuijpers_v4.jpg">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="outer-container">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="cv.html">CV</a>
+      <a href="about.html" class="nav-active">About</a>
+    </nav>
+  </div>
+
+  <main class="outer-container">
+    <div class="content">
+
+      <h1>About</h1>
+
+      <p>I am an economist at De Nederlandsche Bank and a PhD candidate at the University of Amsterdam, supervised by Massimo Giuliodori and Maurice Bun. My research examines how regulatory frameworks shape bank behaviour and the transmission of sovereign risk—work that draws on both econometric methods and a close reading of how European bank regulation actually operates. Before DNB, I worked at PwC on quantitative and regulatory projects for large financial institutions, and at the Dutch Ministry of Finance on banking supervision and regulation.</p>
+
+      <p>My background combines political science and financial economics. I studied political science at VU Amsterdam and the University of Amsterdam before moving to Warwick for a master’s in international financial economics. That combination still shapes how I think: I am interested not just in identifying causal effects in banking data, but in the political and institutional context in which regulation is designed, contested, and enforced.</p>
+
+      <p>I am increasingly drawn to writing for audiences beyond academia. Researchers inside policy institutions see how regulation actually works—where it binds, where it doesn’t, and where the gap between design and practice matters most. I think that perspective deserves a wider audience. This site is part of that effort.</p>
+
+    </div>
+  </main>
+
+  <div class="outer-container">
+    <footer>
+      <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;e.cuijpers&#64;dnb&#46;nl">e.cuijpers&#64;dnb&#46;nl</a>
+      <span>·</span>
+      <a href="https://scholar.google.com/citations?user=IjH0WNsAAAAJ&hl=en">Google Scholar</a>
+      <span>·</span>
+      <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=4034955">SSRN</a>
+      <span>·</span>
+      <a href="https://www.linkedin.com/in/eric-cuijpers-68652515/">LinkedIn</a>
+    </footer>
+  </div>
+
+  <div class="privacy-bar" id="privacy-bar">
+    <p>I care about your privacy. No cookies, no tracking, no third-party requests.</p>
+    <button id="privacy-dismiss">Got it</button>
+  </div>
+  <script>
+    (function() {
+      var bar = document.getElementById('privacy-bar');
+      if (localStorage.getItem('privacy-noted')) { bar.classList.add('hidden'); return; }
+      document.getElementById('privacy-dismiss').addEventListener('click', function() {
+        bar.classList.add('hidden');
+        localStorage.setItem('privacy-noted', '1');
+      });
+    })();
+  </script>
+
+</body>
+</html>

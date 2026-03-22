@@ -1,0 +1,454 @@
+/* =========================================
+   FONT LOADING
+   ========================================= */
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('/assets/fonts/CormorantGaramond-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Serif 4';
+  src: url('/assets/fonts/SourceSerif4-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Serif 4';
+  src: url('/assets/fonts/SourceSerif4-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* =========================================
+   CSS CUSTOM PROPERTIES
+   ========================================= */
+
+:root {
+  --color-bg: #F7F5F0;
+  --color-text: #1A1A1A;
+  --color-accent: #2A5F6F;
+  --color-muted: #5C5C5C;
+  --color-rule: #D9D5CE;
+
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Source Serif 4', Georgia, serif;
+
+  --size-base: 1.125rem;
+  --size-small: 0.95rem;
+  --size-xs: 0.875rem;
+  --line-height-body: 1.75;
+
+  --max-width-text: 680px;
+  --max-width-outer: 900px;
+  --space-section: 3rem;
+  --space-item: 1.5rem;
+}
+
+/* =========================================
+   GLOBAL RESET & BASE
+   ========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: var(--size-base);
+  line-height: var(--line-height-body);
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================================
+   LAYOUT
+   ========================================= */
+
+.outer-container {
+  max-width: var(--max-width-outer);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.content {
+  max-width: var(--max-width-text);
+}
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
+nav {
+  max-width: var(--max-width-text);
+  padding: 2rem 0 1.5rem;
+  display: flex;
+  gap: 1.75rem;
+  font-family: var(--font-body);
+  font-size: var(--size-small);
+  letter-spacing: 0.01em;
+}
+
+nav a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--color-accent);
+}
+
+nav a.nav-active {
+  color: var(--color-accent);
+}
+
+/* =========================================
+   TYPOGRAPHY
+   ========================================= */
+
+h1 {
+  font-family: var(--font-display);
+  font-size: 3.75rem;
+  font-weight: 400;
+  line-height: 1.1;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  font-family: var(--font-display);
+  font-size: 1.65rem;
+  font-weight: 400;
+  margin: var(--space-section) 0 1rem 0;
+  letter-spacing: 0em;
+}
+
+h3 {
+  font-family: var(--font-body);
+  font-size: var(--size-base);
+  font-weight: 500;
+  margin: 0 0 0.25rem 0;
+}
+
+p {
+  margin: 0 0 1.25rem 0;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.muted {
+  color: var(--color-muted);
+  font-size: var(--size-small);
+}
+
+.affiliation {
+  color: var(--color-muted);
+  font-size: var(--size-small);
+  margin: 0 0 0.5rem 0;
+  letter-spacing: 0.02em;
+}
+
+.tagline {
+  color: var(--color-text);
+  font-size: 1.1rem;
+  margin: 0 0 1.75rem 0;
+  font-style: normal;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--color-rule);
+  margin: var(--space-section) 0;
+}
+
+/* =========================================
+   LISTS
+   ========================================= */
+
+ul.item-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.item-list li {
+  margin-bottom: var(--space-item);
+  padding-bottom: var(--space-item);
+  border-bottom: 1px solid var(--color-rule);
+}
+
+ul.item-list li:last-child {
+  border-bottom: none;
+}
+
+.item-title {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: var(--size-base);
+  color: var(--color-text);
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.item-title a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.item-title a:hover {
+  color: var(--color-accent);
+}
+
+.item-meta {
+  color: var(--color-muted);
+  font-size: var(--size-small);
+  display: block;
+  margin-bottom: 0.15rem;
+}
+
+.item-description {
+  color: var(--color-text);
+  font-size: var(--size-small);
+  display: block;
+  margin-top: 0.25rem;
+}
+
+.item-action {
+  display: inline-block;
+  margin-top: 0.6rem;
+  font-size: var(--size-small);
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.item-action:hover {
+  text-decoration: underline;
+}
+
+/* =========================================
+   HOMEPAGE INTRO BLOCK
+   ========================================= */
+
+.intro-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.intro-text {
+  flex: 1;
+}
+
+.intro-photo {
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.intro-photo img {
+  width: 100%;
+  display: block;
+}
+
+/* =========================================
+   CV ENTRIES
+   ========================================= */
+
+.cv-entry {
+  margin-bottom: 1.25rem;
+}
+
+.cv-entry:last-child {
+  margin-bottom: 0;
+}
+
+.cv-entry .item-description {
+  margin: 0;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+  max-width: var(--max-width-text);
+  margin-top: var(--space-section);
+  padding: 2rem 0;
+  border-top: 1px solid var(--color-rule);
+  font-size: var(--size-xs);
+  color: var(--color-muted);
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+footer a {
+  color: var(--color-muted);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--color-accent);
+}
+
+/* =========================================
+   PAPER PAGES
+   ========================================= */
+
+.paper-back {
+  font-size: var(--size-small);
+  margin: 0 0 2rem 0;
+}
+
+.paper-back a {
+  color: var(--color-muted);
+}
+
+.paper-back a:hover {
+  color: var(--color-accent);
+}
+
+h1.paper-title {
+  font-size: 2.25rem;
+  line-height: 1.2;
+  margin: 0 0 0.5rem 0;
+}
+
+.paper-meta {
+  color: var(--color-muted);
+  font-size: var(--size-small);
+  margin: 0 0 1.25rem 0;
+}
+
+.paper-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.paper-links a {
+  font-size: var(--size-small);
+  color: var(--color-accent);
+  text-decoration: none;
+  padding: 0.3rem 0.75rem;
+  border: 1px solid var(--color-accent);
+}
+
+.paper-links a:hover {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+  text-decoration: none;
+}
+
+ul.highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0.35rem 0 0.35rem 0;
+}
+
+ul.highlights li {
+  padding-left: 0;
+  margin-bottom: 0.4rem;
+  font-size: var(--size-base);
+  line-height: var(--line-height-body);
+}
+
+.paper-keywords {
+  color: var(--color-muted);
+  font-size: var(--size-small);
+  margin: 0 0 0.25rem 0;
+}
+
+/* =========================================
+   PRIVACY BAR
+   ========================================= */
+
+.privacy-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  font-size: var(--size-small);
+  padding: 0.85rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  z-index: 1000;
+}
+
+.privacy-bar p {
+  margin: 0;
+}
+
+.privacy-bar button {
+  background: none;
+  border: 1px solid var(--color-bg);
+  color: var(--color-bg);
+  font-family: var(--font-body);
+  font-size: var(--size-xs);
+  padding: 0.3rem 0.9rem;
+  cursor: pointer;
+  letter-spacing: 0.01em;
+}
+
+.privacy-bar button:hover {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.privacy-bar.hidden {
+  display: none;
+}
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .outer-container {
+    padding: 0 1.25rem;
+  }
+
+  .intro-block {
+    flex-direction: column-reverse;
+  }
+
+  .intro-photo {
+    width: 130px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
