@@ -264,6 +264,7 @@ ul.item-list li:last-child {
 
 .intro-photo img {
   width: 100%;
+  height: auto;
   display: block;
 }
 
